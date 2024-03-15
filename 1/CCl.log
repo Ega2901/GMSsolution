@@ -1,0 +1,287 @@
+----- GAMESS execution script 'rungms' -----
+This job is running on host mbp--intel16gb
+under operating system Darwin at Fri Mar 15 08:14:07 MSK 2024
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk1s2   488245288 271597776 201838036    58% 3247098 2018380360    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to ./
+GAMESS supplementary output files will be written to ./
+Copying input file ./CCl.inp to your run's scratch directory...
+cp ./CCl.inp .//CCl.F05
+unset echo
+/Users/egortuzarov/gms_user/gamess/ddikick.x /Users/egortuzarov/gms_user/gamess/gamess.30Jun2020R1.x CCl -ddi 1 1 localhost -scr ./
+
+ Distributed Data Interface kickoff program.
+ Initiating 1 compute processes on 1 nodes to run the following command:
+ /Users/egortuzarov/gms_user/gamess/gamess.30Jun2020R1.x CCl 
+
+          *******************************************************
+          *                                                     *
+          *          GAMESS VERSION = 30 JUN 2020 (R1)          *
+          *                                                     *
+          *              doi.org/10.1063/5.0005188              *
+          *                                                     *
+          **************** 64 BIT APPLE VERSION *****************
+
+  GAMESS HAS BEEN MADE POSSIBLE WITH IMPORTANT CONTRIBUTIONS FROM
+  THE FOLLOWING INDIVIDUALS (IN ALPHABETICAL ORDER):
+
+     IVANA ADAMOVIC, CHRISTINE AIKENS, TOMOKO AKAMA,
+     YURI ALEXEEV, YURIKO AOKI, POOJA ARORA, TOSHIO ASADA,
+     ANDREY ASADCHEV, KIM K. BALDRIDGE, PRADIPTA BANDYOPADHYAY,
+     MARIA BARYSZ, ROB BELL, JONATHAN BENTZ, COLLEEN BERTONI,
+     JERRY A. BOATZ, BRETT BODE, KURT BRORSEN, KURT R. BRORSEN,
+     LAIMUTIS BYTAUTAS, CALEB CARLIN, LAURA CARRINGTON,
+     GALINA CHABAN, BENOIT CHAMPAGNE, WEI CHEN, MAHITO CHIBA,
+     DAN CHIPMAN, CHEOL HO CHOI, TANNER CULPITT, PAUL DAY,
+     ALBERT DEFUSCO, NUWAN DESILVA, J. EMILIANO DEUSTUA,
+     TIM DUDLEY, MICHEL DUPUIS, STEVEN T. ELBERT,
+     DMITRI FEDOROV, ALEX FINDLATER, GRAHAM FLETCHER,
+     MARK FREITAG, CHRISTIAN FRIEDL, DAVID GARMER,
+     IGOR S. GERASIMOV, KURT GLAESEMANN, MARK S. GORDON,
+     JEFFREY GOUR, FENG LONG GU, EMILIE B. GUIDEZ,
+     ANASTASIA GUNINA, SHARON HAMMES-SCHIFFER, MASATAKE HARUTA,
+     KIMIHIKO HIRAO, YASUHIRO IKABATA, TZVETELIN IORDANOV,
+     STEPHAN IRLE, KAZUYA ISHIMURA, JOE IVANIC, FRANK JENSEN,
+     JAN H. JENSEN, VISVALDAS KAIRYS, MUNEAKI KAMIYA,
+     MICHIO KATOUDA, NAOAKI KAWAKAMI, DAN KEMP, BERNARD KIRTMAN,
+     KAZUO KITAURA, MARIUSZ KLOBUKOWSKI, MASATO KOBAYASHI,
+     PRAKASHAN KORAMBATH, JACEK KORCHOWIEC, SHIRO KOSEKI,
+     KAROL KOWALSKI, JIMMY KROMANN, STANISLAW KUCHARSKI,
+     HENRY KURTZ, SAROM SOK LEANG, HUI LI, SHUHUA LI, WEI LI,
+     JESSE LUTZ, ALEKSANDR O. LYKHIN, MARCIN MAKOWSKI,
+     JOANI MATO, NIKITA MATSUNAGA, BENEDETTA MENNUCCI,
+     GRANT MERRILL, NORIYUKI MINEZAWA, VLADIMIR MIRONOV,
+     EISAKU MIYOSHI, JOHN A. MONTGOMERY JR., HIROTOSHI MORI,
+     JONATHAN MULLIN, MONIKA MUSIAL, SHIGERU NAGASE,
+     TAKESHI NAGATA, HIROMI NAKAI, TAKAHITO NAKAJIMA,
+     YUYA NAKAJIMA, HARUYUKI NAKANO, HIROYA NAKATA, SEAN NEDD,
+     HEATHER NETZLOFF, KIET A. NGUYEN, YOSHIO NISHIMOTO,
+     BOSILJKA NJEGIC, RYAN OLSON, MIKE PAK, ROBERTO PEVERATI,
+     BUU PHAM, PIOTR PIECUCH, ANNA POMOGAEVA, DAVID POOLE,
+     SPENCER PRUITT, OLIVIER QUINET, LUKE ROSKOP,
+     KLAUS RUEDENBERG, ANDREW SAND, TOSAPORN SATTASATHUCHANA,
+     NOZOMI SAWADA, MICHAEL W. SCHMIDT, PATRICK E. SCHNEIDER,
+     JUNJI SEINO, PRACHI SHARMA, JUN SHEN, JIM SHOEMAKER,
+     YINAN SHU, DEJUN SI, JONATHAN SKONE, LYUDMILA SLIPCHENKO,
+     TONY SMITH, JIE SONG, MARK SPACKMAN, CASPER STEINMANN,
+     WALT STEVENS, PEIFENG SU, SHUJUN SU, CHET SWALINA,
+     TETSUYA TAKETSUGU, ZHEN TAO, NANDUN THELLAMUREGE
+     SEIKEN TOKURA, JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA,
+     HIROAKI UMEDA, JORGE LUIS GALVEZ VALLEJO, YALI WANG,
+     SIMON WEBB, AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
+     PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
+     SOOHAENG YOO, TAKESHI YOSHIKAWA, FEDERICO ZAHARIEV,
+     TOBY ZENG
+
+  WHO ARE SUPPORTED BY THEIR INSTITUTION/UNIVERSITY/COMPANY/GROUP
+  (IN ALPHABETICAL ORDER):
+
+     EP ANALYTICS, FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX,
+     INSTITUTE FOR MOLECULAR SCIENCE, IOWA STATE UNIVERSITY,
+     JACKSON STATE UNIVERSITY, JOHANNES KEPLER UNIVERSITY LINZ,
+     KYUSHU UNIVERSITY, MICHIGAN STATE UNIVERSITY,
+     MIE UNIVERSITY, MOSCOW STATE UNIVERSITY,
+     N. COPERNICUS UNIVERSITY, NAGOYA UNIVERSITY,
+     NANJING UNIVERSITY, NAT. INST. OF ADVANCED INDUSTRIAL
+     SCIENCE AND TECHNOLOGY, NATIONAL INST. OF STANDARDS AND
+     TECHNOLOGY, NESMEYANOV INSTITUTE OF ORGANOELEMENT COMPOUNDS
+     OF RUSSIAN ACADEMY OF SCIENCES, OSAKA PREFECTURE UNIVERSITY,
+     PENNSYLVANIA STATE UNIVERSITY, TOKYO INSTITUTE OF TECHNOLOGY,
+     UNIVERSITY OF AARHUS, UNIVERSITY OF ALBERTA,
+     UNIVERSITY OF CALIFORNIA AT SANTA BARBARA,
+     UNIVERSITY OF COPENHAGEN, UNIVERSITY OF IOWA,
+     UNIVERSITY OF MEMPHIS, UNIVERSITY OF MINNESOTA,
+     UNIVERSITY OF NEBRASKA, UNIVERSITY OF NEW ENGLAND,
+     UNIVERSITY OF NOTRE DAME, UNIVERSITY OF PISA,
+     UNIVERSITY OF SILESIA, UNIVERSITY OF TOKYO,
+     UNIVERSITY OF ZURICH, WASEDA UNIVERSITY, YALE UNIVERSITY
+
+  GAMESS SOFTWARE MANAGEMENT TEAM FOR THIS RELEASE:
+
+     MARK S. GORDON (TEAM LEAD),
+     BRETT BODE (SENIOR ADVISOR),
+     GIUSEPPE BARCA,
+     COLLEEN BERTONI,
+     KRISTOPHER KEIPERT (ADVISOR),
+     SAROM S. LEANG (DEVELOPMENT LEAD),
+     BUU PHAM,
+     JORGE LUIS GALVEZ VALLEJO (WEBSITE ADMINISTRATOR),
+     PENG XU
+
+ EXECUTION OF GAMESS BEGUN Fri Mar 15 08:14:08 2024
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 NPFUNC=1 DIFFSP=.TRUE. $END                
+ INPUT CARD> $CONTRL SCFTYP=UHF RUNTYP=OPTIMIZE MULT=2 $END                                 
+ INPUT CARD> $STATPT OPTTOL=0.0001 NSTEP=20 $END                                            
+ INPUT CARD>                                                                                
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>Title                                                                           
+ INPUT CARD>C1                                                                              
+ INPUT CARD>C     6.0    -0.13910     0.00530    -0.00010                                   
+ INPUT CARD>Cl    17.0     1.62660    -0.06170     0.00170                                  
+ INPUT CARD>H     1.0    -0.51560    -0.52580    -0.87720                                   
+ INPUT CARD>H     1.0    -0.51530    -0.46750     0.90970                                   
+ INPUT CARD>H     1.0    -0.45670     1.04970    -0.03420                                   
+ INPUT CARD> $END                                                                           
+    1000000 WORDS OF MEMORY AVAILABLE
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=N31          IGAUSS=       6      POLAR=POPN31  
+     NDFUNC=       1     NFFUNC=       0     DIFFSP=       T
+     NPFUNC=       1      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ Title                                                                           
+
+ THE POINT GROUP OF THE MOLECULE IS C1      
+ THE ORDER OF THE PRINCIPAL AXIS IS     0
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ C           6.0    -0.2628608849        0.0100155477       -0.0001889726
+ CL         17.0     3.0738282916       -0.1165960934        0.0032125342
+ H           1.0    -0.9743427193       -0.9936179243       -1.6576676364
+ H           1.0    -0.9737758015       -0.8834468993        1.7190837310
+ H           1.0    -0.8630378586        1.9836453693       -0.0646286288
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 C          2 CL         3 H          4 H          5 H     
+
+   1 C       0.0000000    1.7669716 *  1.0923021 *  1.0921549 *  1.0921556 *
+   2 CL      1.7669716 *  0.0000000    2.3615408 *  2.3615404 *  2.3614906 *
+   3 H       1.0923021 *  2.3615408 *  0.0000000    1.7878508 *  1.7878251 *
+   4 H       1.0921549 *  2.3615404 *  1.7878508 *  0.0000000    1.7878135 *
+   5 H       1.0921556 *  2.3614906 *  1.7878251 *  1.7878135 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+     ATOMIC BASIS SET
+     ----------------
+ THE CONTRACTED PRIMITIVE FUNCTIONS HAVE BEEN UNNORMALIZED
+ THE CONTRACTED BASIS FUNCTIONS ARE NOW NORMALIZED TO UNITY
+
+  SHELL TYPE  PRIMITIVE        EXPONENT          CONTRACTION COEFFICIENT(S)
+
+ C         
+
+      1   S       1          3047.5248800    0.001834737132
+      1   S       2           457.3695180    0.014037322813
+      1   S       3           103.9486850    0.068842622264
+      1   S       4            29.2101553    0.232184443216
+      1   S       5             9.2866630    0.467941348435
+      1   S       6             3.1639270    0.362311985337
+
+      2   L       7             7.8682723   -0.119332419775    0.068999066591
+      2   L       8             1.8812885   -0.160854151696    0.316423960957
+      2   L       9             0.5442493    1.143456437840    0.744308290898
+
+      3   L      10             0.1687145    1.000000000000    1.000000000000
+
+      4   L      11             0.0438000    1.000000000000    1.000000000000
+
+      5   D      12             0.8000000    1.000000000000
+
+ CL        
+
+      6   S      13         25180.1000000    0.001832959848
+      6   S      14          3780.3500000    0.014034198835
+      6   S      15           860.4740000    0.069097394263
+      6   S      16           242.1450000    0.237451980285
+      6   S      17            77.3349000    0.483033959896
+      6   S      18            26.2470000    0.339855971783
+
+      7   L      19           491.7650000   -0.002297391417    0.003989400879
+      7   L      20           116.9840000   -0.030713718938    0.030317706682
+      7   L      21            37.4153000   -0.112528069386    0.129880028625
+      7   L      22            13.7834000    0.045016327757    0.327951072278
+      7   L      23             5.4521500    0.589353363399    0.453527099954
+      7   L      24             2.2258800    0.465206286849    0.252154055573
+
+      8   L      25             3.1864900   -0.251831288046   -0.014299314719
+      8   L      26             1.1442700    0.061589315012    0.323572333073
+      8   L      27             0.4203770    1.060185422549    0.743507765337
+
+      9   L      28             0.1426570    1.000000000000    1.000000000000
+
+     10   L      29             0.0483000    1.000000000000    1.000000000000
+
+     11   D      30             0.7500000    1.000000000000
+
+ H         
+
+     12   S      31            18.7311370    0.033494604338
+     12   S      32             2.8253944    0.234726953484
+     12   S      33             0.6401217    0.813757326146
+
+     13   S      34             0.1612778    1.000000000000
+
+     14   P      35             1.1000000    1.000000000000
+
+ H         
+
+     15   S      36            18.7311370    0.033494604338
+     15   S      37             2.8253944    0.234726953484
+     15   S      38             0.6401217    0.813757326146
+
+     16   S      39             0.1612778    1.000000000000
+
+     17   P      40             1.1000000    1.000000000000
+
+ H         
+
+     18   S      41            18.7311370    0.033494604338
+     18   S      42             2.8253944    0.234726953484
+     18   S      43             0.6401217    0.813757326146
+
+     19   S      44             0.1612778    1.000000000000
+
+     20   P      45             1.1000000    1.000000000000
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =   20
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =   57
+ NUMBER OF ELECTRONS                          =   26
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    2
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   13
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =   12
+ TOTAL NUMBER OF ATOMS                        =    5
+ THE NUCLEAR REPULSION ENERGY IS       51.5844921181
+
+
+ *** CHECK YOUR INPUT CHARGE AND MULTIPLICITY ***
+ THERE ARE    26 ELECTRONS, WITH CHARGE ICHARG=  0
+ BUT YOU SELECTED MULTIPLICITY MULT=  2
+ EXECUTION OF GAMESS TERMINATED -ABNORMALLY- AT Fri Mar 15 08:14:08 2024
+               580000  WORDS OF DYNAMIC MEMORY USED
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS     0.00%
+ DDI Process 0: error code 911
+ ddikick.x: application process 0 quit unexpectedly.
+ ddikick.x: Fatal error detected.
+ The error is most likely to be in the application, so check for
+ input errors, disk space, memory needs, application bugs, etc.
+ ddikick.x will now clean up all processes, and exit...
+ DDI Process 1: terminated upon request.
+ ddikick.x: Sending kill signal to DDI processes.
+ ddikick.x: Execution terminated due to error(s).
+unset echo
+----- accounting info -----
+Files used on the master node mbp--intel16gb were:
+-rw-r--r--  1 egortuzarov  staff     404 Mar 15 08:14 .//CCl.F05
+-rw-r--r--  1 egortuzarov  staff  785280 Mar 15 08:14 .//CCl.F10
+-rw-r--r--  1 egortuzarov  staff    1003 Mar 15 08:14 .//CCl.dat
+-rw-r--r--  1 egortuzarov  staff     404 Mar 15 08:14 .//CCl.inp
+-rw-r--r--  1 egortuzarov  staff   13287 Mar 15 08:14 .//CCl.log
+ls: No match.
+ls: No match.
+ls: No match.
+Fri Mar 15 08:14:10 MSK 2024
+0.129u 0.173s 0:02.47 11.7%	0+0k 0+0io 60pf+0w
